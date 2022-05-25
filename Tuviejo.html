@@ -60,31 +60,15 @@
    </div>
     <script>
     var usuario = prompt("¿cual es tu peso? "); 
-    var planeta = parseInt( prompt("¿Que planeta deseas terricola ?\n 1 es marte, 2 es Jupiter "));
     var usuario = parseFloat(usuario).toFixed(2);
     var g_tierra = 9.8;
     var g_marte = 3.7;
     var g_jupiter = 24.8;
     var peso = usuario;
     var peso_final;
-        if(planeta==1)
-        {
-            peso_final = peso * g_marte / g_tierra;
-            peso_final= parseFloat(peso_final).toFixed(2)
-            document.write("<center><span class='tuviejo'>Tu peso final es: </span><span class='animal'>" + peso_final + " kg. </span></center>"    );  
-        }
-        else if(planeta==2)
-        {
-            peso_final = peso * g_jupiter / g_tierra;
-            peso_final= parseFloat(peso_final).toFixed(2)
-            document.write("<center><span class='tuviejo'>Tu peso final es: </span><span class='animal'>" + peso_final + " kg. </span></center>"    );
-        }
-        else 
-        {
-            peso_final=10000000
-            peso_final= parseFloat(peso_final).toFixed(2)
-            document.write("<center><span class='tuviejo'>Tu peso final es: </span><span class='animal'>" + peso_final + " kg. </span></center>"    );
-        }
+    peso_final = peso * 3.7 / g_tierra; 
+    peso_final = parseFloat(peso_final).toFixed(2);
+    document.write("<center><span class='tuviejo'>Tu peso final es: </span><span class='animal'>" + peso_final + " kg. </span></center>"    );   
     </script>
     <img src="https://images.vexels.com/media/users/3/152639/isolated/preview/506b575739e90613428cdb399175e2c8-dibujos-animados-de-astronauta-espacial.png" alt="pobre de mrd">
 </body>
